@@ -7,8 +7,9 @@
 meteor-platform
 #autopublish
 #insecure
-audit-argument-checks
 
+audit-argument-checks
+browser-policy
 
 nemo64:bootstrap
 flemay:less-autoprefixer
