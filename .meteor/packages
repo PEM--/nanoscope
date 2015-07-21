@@ -10,7 +10,7 @@ meteor-platform
 
 # Security
 audit-argument-checks
-browser-policy
+#browser-policy
 
 # Language
 mquandalle:jade

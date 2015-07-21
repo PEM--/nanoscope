@@ -1,2 +1,2 @@
 Template.index.helpers
-  'click button': -> Router.go 'Posts'
+  'click button': -> Router.go '/mainPosts'
