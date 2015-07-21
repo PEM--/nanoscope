@@ -6,7 +6,7 @@
 - [X] Restructuration du code source.
 - [X] Linting
 - [ ] BrowserPolicy
-- [ ] Autoform pour les formulaires, simple-schema pour la
- vérification
+- [X] Autoform pour les formulaires, simple-schema pour la
+ vérification, collection2
 - [X] Linting
 - [ ] Vérification allow/deny rules
