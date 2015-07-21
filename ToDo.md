@@ -11,3 +11,4 @@
 - [X] Linting
 - [X] Check des variables dans Meteor.call
 - [ ] Vérification allow/deny rules
+- [/] Bootstrap theming
