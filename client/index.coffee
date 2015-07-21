@@ -1,2 +1,4 @@
-Template.index.helpers
-  'click button': -> Router.go '/mainPosts'
+Template.index.events
+  'click button': ->
+    console.log 'Click'
+    Router.go '/mainPosts'
