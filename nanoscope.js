@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-
-=======
-Posts = new Mongo.Collection('posts');
->>>>>>> c362458ca5d936cf15baf3455e35c3b1369f160e
 Posts.allow({
   update: function(userId, post) {
     return true;
