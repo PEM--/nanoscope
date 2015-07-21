@@ -8,5 +8,3 @@
 - [ ] Linting
 - [ ] Autoform pour les formulaires, simple-schema pour la vérification
 - [ ] Vérification allow/deny rules
-
-Salut Nabil
