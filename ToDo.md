@@ -3,6 +3,7 @@
 - [X] Adding audit-argument-checks
 - [X] Retrait Bootstrap pour Nemo64/Bootstrap
 - [X] less + autoprefixer
+- [/] Restructuration du code source.
 - [ ] Vérifier l'authentification utilisateur
 - [ ] Validation du formulaire (valeurs vides, check)
 - [ ] Linting
