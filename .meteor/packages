@@ -8,18 +8,28 @@ meteor-platform
 #autopublish
 #insecure
 
+# Security
 audit-argument-checks
 browser-policy
 
-nemo64:bootstrap
+# Language
+mquandalle:jade
+mquandalle:stylus
+coffeescript
 flemay:less-autoprefixer
 
+# Routing and tools
+iron:router
 accounts-password
 accounts-ui
 aldeed:autoform
 aldeed:collection2
+underscorestring:underscore.string
 
+# CSS and goodies
+nemo64:bootstrap
 natestrauser:animate-css
 frabrunelle:fittext
 noorderstorm:wow
 fortawesome:fontawesome
+pcel:loading
