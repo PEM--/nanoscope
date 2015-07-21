@@ -4,30 +4,6 @@
   {{> posts}}
 </template>
 
-<template name="posts">
-  <div id="main" class="row-fluid">
-    <div class="posts page">
-      <div class="wrapper">
-        {{#each posts}}
-          {{> postItem}}
-        {{/each}}
-      </div>
-    </div>
-  </div>
-</template>
-
-<template name="postItem">
-  <div class="post">
-    <a href="#" class="upvote btn {{upvotedClass}}">⬆</a>
-    <div class="post-content">
-      <h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span></h3>
-      <p>
-        {{votes}} votes, submitted by {{author}},
-      </p>
-    </div>
-  </div>
-</template>
-
 <template name="postSubmit">
   {{> quickForm collection="Posts" id="insertPostForm" type="insert" fields="Url,title"}}
 </template>
