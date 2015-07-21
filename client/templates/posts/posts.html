@@ -1,0 +1,11 @@
+<template name="posts">
+  <div id="main" class="row-fluid">
+    <div class="posts page">
+      <div class="wrapper">
+        {{#each posts}}
+          {{> postItem}}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</template>

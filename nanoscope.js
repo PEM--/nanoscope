@@ -51,6 +51,7 @@ Meteor.methods({
 });
 
 if (Meteor.isClient) {
+
   Template.postItem.helpers({
     upvotedClass: function() {
       var userId = Meteor.userId();
@@ -62,11 +63,7 @@ if (Meteor.isClient) {
     },
   });
 
-  Template.posts.helpers({
-    posts: function() {
-      return Posts.find();
-    }
-  });
+
 
   Template.postSubmit.events({
     'submit form': function(e) {

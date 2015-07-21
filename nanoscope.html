@@ -11,19 +11,6 @@
   </div>
 </body>
 
-<template name="posts">
-  <div id="main" class="row-fluid">
-    <div class="posts page">
-      <div class="wrapper">
-        {{#each posts}}
-          {{> postItem}}
-        {{/each}}
-      </div>
-    </div>
-  </div>
-</template>
-
-
 <template name="postItem">
   <div class="post">
     <a href="#" class="upvote btn {{upvotedClass}}">⬆</a>
