@@ -37,6 +37,8 @@
 </template>
 
 <template name="postSubmit">
+  {{> quickForm collection="Posts" id="insertPostForm" type="insert"}}
+  <!--
   <form class="main form page">
     <div class="form-group">
       <label class="control-label" for="url">URL</label>
@@ -52,4 +54,5 @@
     </div>
     <input type="submit" value="Submit" class="btn btn-primary"/>
   </form>
+  -->
 </template>
