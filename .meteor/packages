@@ -8,6 +8,10 @@ meteor-platform
 #autopublish
 #insecure
 audit-argument-checks
-bootstrap
+
+
+nemo64:bootstrap
+flemay:less-autoprefixer
+
 accounts-password
 accounts-ui
