@@ -1,4 +1,9 @@
 Posts.allow({
+
+  insert: function(userId) {
+    return true;
+  },
+
   update: function(userId, post) {
     return true;
   },
@@ -9,6 +14,7 @@ Posts.allow({
 
 Meteor.methods({
   post: function(title, url) {
+    console.log("Called");
     try {
       check(title, String);
       check(url, String);
@@ -61,21 +67,6 @@ if (Meteor.isClient) {
         return 'disabled';
       }
     },
-  });
-
-
-
-  Template.postSubmit.events({
-    'submit form': function(e) {
-      e.preventDefault();
-
-      var post = {
-        url: $(e.target).find('[name=url]').val(),
-        title: $(e.target).find('[name=title]').val()
-      };
-
-      Meteor.call('post', post.url, post.title);
-    }
   });
 
   Template.postItem.events({
