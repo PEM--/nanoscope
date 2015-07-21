@@ -32,6 +32,7 @@ Meteor.methods({
     }
   },
   upvote: function(postId) {
+    console.log("Upvote called");
     try {
       check(postId, String);
       var user = Meteor.user();
