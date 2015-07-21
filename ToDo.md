@@ -1,0 +1,10 @@
+- [X] Remove insecure
+- [X] Remove Autopublish
+- [X] Adding audit-argument-checks
+- [ ] Retrait Bootstrap pour Nemo64/Bootstrap
+- [ ] less + autoprefixer
+- [ ] Vérifier l'authentification utilisateur
+- [ ] Validation du formulaire (valeurs vides, check)
+- [ ] Linting
+- [ ] Autoform pour les formulaires, simple-schema pour la vérification
+- [ ] Vérification allow/deny rules
