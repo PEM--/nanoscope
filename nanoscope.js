@@ -26,22 +26,27 @@ Meteor.methods({
     }
   },
   upvote: function(postId) {
-    var user = Meteor.user();
-    if (!user) return false;
+    try {
+      check(postId, String);
+      var user = Meteor.user();
+      if (!user) return false;
 
-    Posts.update({
-      _id: postId,
-      upvoters: {
-        $ne: user._id
-      }
-    }, {
-      $addToSet: {
-        upvoters: user._id
-      },
-      $inc: {
-        votes: 1
-      }
-    });
+      Posts.update({
+        _id: postId,
+        upvoters: {
+          $ne: user._id
+        }
+      }, {
+        $addToSet: {
+          upvoters: user._id
+        },
+        $inc: {
+          votes: 1
+        }
+      });
+    } catch (error) {
+      console.warn('Post failed', error);
+    }
   }
 });
 
