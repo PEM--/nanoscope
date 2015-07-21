@@ -9,5 +9,5 @@
 - [X] Autoform pour les formulaires, simple-schema pour la
  vérification, collection2
 - [X] Linting
-- [ ] Check des variables dans Meteor.call
+- [X] Check des variables dans Meteor.call
 - [ ] Vérification allow/deny rules
