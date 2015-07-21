@@ -9,10 +9,11 @@ if Meteor.isServer
   # BrowserPolicy.content.disallowInlineScripts()
   BrowserPolicy.content.disallowConnect()
   # Only allow necessary protocols
-  appLog.info 'Settings', Meteor.settings.public.proxy.url
+  #PROXY_URL = 'nanoscope.meteor.com'
+  PROXY_URL = 'localhost:3000'
   # Allow origin for Meteor hosting
   for protocol in ['http', 'https', 'ws', 'wss']
-    url = Meteor.settings.public.proxy.url
+    url = PROXY_URL
     if s.contains url, 'meteor'
       url = "#{protocol}://*.meteor.com"
     else

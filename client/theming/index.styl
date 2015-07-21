@@ -1,0 +1,49 @@
+body
+  display flex
+  flex-direction row
+  flex-wrap wrap
+  background #A5C4E8
+  main
+    flex-grow 1
+    size 100% 100vh
+    video
+      position fixed
+      right 0
+      bottom 0
+      min-width 100%
+      min-height 100vh
+      size auto auto
+      z-index -100
+      background-size cover
+    article
+      text-align center
+      transform translate3d(0, 50%, 0)
+      h1, h2, button
+        font-family $helvetica
+        color darken(#544c4c, 40%)
+      h1
+        font-size 5em
+        font-weight light
+      h2
+        font-size 6em
+        font-weight light
+      button
+        button rgba(white, 20%)
+        font-size 1.1em
+        border 1px solid darken(#544c4c, 40%)
+        size 26em 4em
+        transform all .3s ease-in-out
+        &:hover
+          background-color rgba(white, 10%)
+  footer
+    flex-grow 0
+    size 100% 100px
+    background #544c4c
+    color white
+    ul
+      inline-list()
+      text-align center
+      li
+        a
+          font-size 200%
+          color white
