@@ -9,15 +9,21 @@ Posts.allow({
 
 Meteor.methods({
   post: function(title, url) {
-    var A = Meteor.user();
-    var post = {
-      userId: A && A._id,
-      author: A && A.emails[0].address,
-      title: title,
-      Url: url
-    };
+    try {
+      check(title, String);
+      check(url, String);
+      var A = Meteor.user();
+      var post = {
+        userId: A && A._id,
+        author: A && A.emails[0].address,
+        title: title,
+        Url: url
+      };
+      Posts.insert(post);
 
-    Posts.insert(post);
+    } catch (error) {
+      console.warn('Post failed', error);
+    }
   },
   upvote: function(postId) {
     var user = Meteor.user();
